@@ -1,6 +1,7 @@
 from com.android.monkeyrunner import MonkeyRunner, MonkeyDevice
 device = MonkeyRunner.waitForConnection()
 device.startActivity(component='com.android.calculator2/.Calculator')
+MonkeyRunner.sleep(6)
 device.press('KEYCODE_1', MonkeyDevice.DOWN_AND_UP)
 device.press('KEYCODE_PLUS', MonkeyDevice.DOWN_AND_UP)
 device.press('KEYCODE_2', MonkeyDevice.DOWN_AND_UP)
